@@ -12,3 +12,4 @@ annotation class NotDuplicatedEmail(
     val groups: Array<KClass<*>> = [],
     val payload: Array<KClass<out Payload>> = []
 )
+

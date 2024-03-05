@@ -2,3 +2,12 @@ spring:
   thymeleaf:
     prefix: classpath:/templates/
     cache: false
+
+
+  messages:
+    encoding: UTF-8
+
+logging:
+  level:
+    org.hibernate.SQL: debug
+    org.hibernate.type.descriptor.sql.BasicBinder: trace

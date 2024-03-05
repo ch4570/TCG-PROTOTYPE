@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>회원 가입 페이지</title>
+    <link th:href="@{/styles/registerMemberForm.css}" rel="stylesheet"/>
+</head>
+<body>
+    <div class="member_form-container">
+        <h1>회원 가입</h1>
+
+        <form id="memberForm" th:action="@{/members/submitForm}" th:object="${memberFormData}" method="POST">
+            <label for="name">이름</label>
+            <input type="text" id="name" th:field="*{name}"/>
+            <p th:if="${#fields.hasErrors('name')}" th:errors="*{name}" class="error-message"></p>
+
+            <label for="email">이메일</label>
+            <input type="text" id="email" th:field="*{email}"/>
+            <p th:if="${#fields.hasErrors('email')}" th:errors="*{email}" class="error-message"></p>
+
+            <label for="regDate">가입날짜</label>
+            <input type="text" id="regDate" th:field="*{regDate}"/>
+            <p th:if="${#fields.hasErrors('regDate')}" th:errors="*{regDate}" class="error-message"></p>
+        </form>
+
+            <button id="cancel" onclick="cancel()">취소</button>
+            <button id="submit" type="submit" onclick="submit()">등록</button>
+    </div>
+</body>
+<script>
+    function submit() {
+        let memberForm = document.getElementById('memberForm')
+        memberForm.submit()
+    }
+
+    function cancel() {
+        location.href = '/members/list'
+    }
+</script>
+</html>

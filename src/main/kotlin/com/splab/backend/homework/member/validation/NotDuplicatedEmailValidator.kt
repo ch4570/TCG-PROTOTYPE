@@ -10,9 +10,7 @@ class NotDuplicatedEmailValidator(
 
 
     override fun isValid(email: String?, context: ConstraintValidatorContext?): Boolean {
-        if (email.isNullOrEmpty()) return false
-
-        val findMember = memberRepository.findByEmail(email)
+        val findMember = memberRepository.findByEmail(email!!)
         return findMember == null
     }
 }
