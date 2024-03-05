@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>회원 조회 페이지</title>
+    <link th:href="@{/styles/loadMemberList.css}" rel="stylesheet"/>
+</head>
+<body>
+<div class="container">
+    <div class="header-container">
+        <div class="search-container">
+            <label for="name">이름: </label>
+            <input type="text" id="name"/>
+            <label for="level">레벨: </label>
+            <input type="text" id="level">
+        </div>
+        <div class="buttons-container">
+            <button class="search-button">검색</button>
+            <button class="register-button">회원 등록</button>
+        </div>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>이름</th>
+                <th>이메일</th>
+                <th>가입일자</th>
+                <th>레벨</th>
+                <th>카드갯수</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="member : ${memberList}">
+                <td th:text="${member.id}"></td>
+                <td th:text="${member.name}"></td>
+                <td th:text="${member.email}"></td>
+                <td th:text="${member.regDate}"></td>
+                <td th:text="${member.level}"></td>
+                <td th:text="${member.cardCount}"></td>
+                <td><a href="#" th:onclick="|javascript:deleteMember('${member.id}')|">[삭제]</a></td>
+            </tr>
+        </tbody>
+
+
+    </table>
+</div>
+</body>
+<script>
+    function deleteMember(memberId) {
+        if (confirm('회원을 삭제하시겠습니까?')) {
+            alert('memberId = ' + memberId)
+        }
+    }
+</script>
+</html>

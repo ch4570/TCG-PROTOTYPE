@@ -1,0 +1,77 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+label {
+    display: inline-block;
+    width: 40px;
+    font-size: 16px;
+    line-height: 40px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    flex: 1;
+    height: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.search-button {
+    background-color: #007bff;
+    color: white;
+}
+
+.register-button {
+    background-color: #28a745;
+    color: white;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ddd; /* 경계선 추가 */
+}
+
+th {
+    background-color: #f2f2f2;
+    width: 150px; /* 각 열의 크기 동일하게 설정 */
+}

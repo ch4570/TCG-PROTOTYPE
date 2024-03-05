@@ -1,6 +1,6 @@
 package com.splab.backend.homework.member.entity
 
-enum class Rank {
+enum class Level {
 
     BRONZE, SILVER, GOLD
 }

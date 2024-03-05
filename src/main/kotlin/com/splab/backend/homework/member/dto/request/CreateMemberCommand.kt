@@ -1,7 +1,7 @@
 package com.splab.backend.homework.member.dto.request
 
 import com.splab.backend.homework.member.entity.Member
-import com.splab.backend.homework.member.entity.Rank
+import com.splab.backend.homework.member.entity.Level
 import com.splab.backend.homework.member.validation.DateRange
 import com.splab.backend.homework.member.validation.NotDuplicatedEmail
 import jakarta.validation.constraints.NotBlank
@@ -34,7 +34,7 @@ data class CreateMemberCommand(
         name = name!!,
         email = email!!,
         regDate = regDate!!,
-        rank = Rank.BRONZE,
+        level = Level.BRONZE,
         cardCount = 0,
         cardTotalPrice = 0.0
     )

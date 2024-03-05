@@ -22,9 +22,9 @@ class Member(
     @Column(name = "MEMBER_CARD_TOTAL_PRICE", columnDefinition = "INT")
     val cardTotalPrice: Double,
 
-    @Column(name = "MEMBER_RANK", columnDefinition = "VARCHAR(20)")
+    @Column(name = "MEMBER_LEVEL", columnDefinition = "VARCHAR(20)")
     @Enumerated(EnumType.STRING)
-    val rank: Rank,
+    val level: Level,
 
     @Column(name = "MEMBER_REG_DATE", columnDefinition = "TIMESTAMP")
     val regDate: LocalDate
