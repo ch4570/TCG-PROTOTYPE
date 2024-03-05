@@ -1,7 +1,7 @@
 package com.splab.backend.homework.member.entity
 
 import jakarta.persistence.*
-import java.time.LocalDateTime
+import java.time.LocalDate
 
 @Entity
 class Member(
@@ -27,5 +27,5 @@ class Member(
     val rank: Rank,
 
     @Column(name = "MEMBER_REG_DATE", columnDefinition = "TIMESTAMP")
-    val regDate: LocalDateTime
+    val regDate: LocalDate
 )

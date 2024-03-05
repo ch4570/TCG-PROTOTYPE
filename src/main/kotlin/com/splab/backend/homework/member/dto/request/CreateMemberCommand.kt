@@ -9,7 +9,7 @@ import jakarta.validation.constraints.NotNull
 import jakarta.validation.constraints.Pattern
 import org.hibernate.validator.constraints.Length
 import org.springframework.format.annotation.DateTimeFormat
-import java.time.LocalDateTime
+import java.time.LocalDate
 
 data class CreateMemberCommand(
 
@@ -26,8 +26,8 @@ data class CreateMemberCommand(
 
     @field:DateRange
     @field:NotNull(message = "날짜는 비어있을 수 없습니다.")
-    @field:DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-    val regDate: LocalDateTime?
+    @field:DateTimeFormat(pattern = "yyyy-MM-dd")
+    val regDate: LocalDate?
 ) {
 
     fun mapToEntity() = Member(
