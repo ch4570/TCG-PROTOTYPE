@@ -15,3 +15,11 @@ Rsrc/main/kotlin/com/splab/backend/homework/member/validation/DateRangeValidator
 Xsrc/main/kotlin/com/splab/backend/homework/member/controller/RegisterMemberController.kt,f/4/f41f86e7bb14abb1394c841da200440afba250bc
 „
 Tsrc/main/kotlin/com/splab/backend/homework/member/controller/LoadMemberController.kt,f/0/f0c4ede64f0041396b2fff93b970de5e9da55127
+r
+Bsrc/main/kotlin/com/splab/backend/homework/member/entity/Member.kt,7/1/717c689db5aaf696eab63c1515d7fdbb0de72a27
+p
+@src/main/kotlin/com/splab/backend/homework/member/entity/Rank.kt,d/e/de434a68a1bf142f8e86288311b8792f481ed80b
+€
+Psrc/main/kotlin/com/splab/backend/homework/member/service/CreateMemberUseCase.kt,7/5/7551cdbbeea80dff1512c910a8af4318c2e705b1
+€
+Psrc/main/kotlin/com/splab/backend/homework/member/service/CreateMemberService.kt,b/5/b52e8411ce3ea70a2aab44c1c99abb61c061e003

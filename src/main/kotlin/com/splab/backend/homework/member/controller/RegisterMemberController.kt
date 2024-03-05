@@ -1,6 +1,7 @@
 package com.splab.backend.homework.member.controller
 
 import com.splab.backend.homework.member.dto.request.CreateMemberCommand
+import com.splab.backend.homework.member.service.CreateMemberUseCase
 import jakarta.validation.Valid
 import org.springframework.stereotype.Controller
 import org.springframework.ui.Model
@@ -12,7 +13,9 @@ import org.springframework.web.bind.annotation.RequestMapping
 
 @Controller
 @RequestMapping("/members")
-class RegisterMemberController {
+class RegisterMemberController(
+    private val createMemberUseCase: CreateMemberUseCase
+) {
 
     @GetMapping("/registerForm")
     fun memberRegisterForm(model: Model) : String {
@@ -26,6 +29,8 @@ class RegisterMemberController {
                      bindingResult: BindingResult) : String {
         if (bindingResult.hasErrors())
             return "registerMemberForm"
+
+        createMemberUseCase.createMember(memberFormData)
 
         return "redirect:/members/list"
     }

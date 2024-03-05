@@ -1,5 +1,7 @@
 package com.splab.backend.homework.member.dto.request
 
+import com.splab.backend.homework.member.entity.Member
+import com.splab.backend.homework.member.entity.Rank
 import com.splab.backend.homework.member.validation.DateRange
 import com.splab.backend.homework.member.validation.NotDuplicatedEmail
 import jakarta.validation.constraints.NotBlank
@@ -26,4 +28,14 @@ data class CreateMemberCommand(
     @field:NotNull(message = "날짜는 비어있을 수 없습니다.")
     @field:DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     val regDate: LocalDateTime?
-)
+) {
+
+    fun mapToEntity() = Member(
+        name = name!!,
+        email = email!!,
+        regDate = regDate!!,
+        rank = Rank.BRONZE,
+        cardCount = 0,
+        cardTotalPrice = 0.0
+    )
+}
