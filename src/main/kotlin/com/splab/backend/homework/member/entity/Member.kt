@@ -1,4 +1,4 @@
-package com.splab.backend.homework.member.domain
+package com.splab.backend.homework.member.entity
 
 import jakarta.persistence.Column
 import jakarta.persistence.Entity
