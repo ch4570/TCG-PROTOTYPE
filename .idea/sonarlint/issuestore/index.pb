@@ -17,8 +17,6 @@ Xsrc/main/kotlin/com/splab/backend/homework/member/controller/RegisterMemberCont
 Tsrc/main/kotlin/com/splab/backend/homework/member/controller/LoadMemberController.kt,f/0/f0c4ede64f0041396b2fff93b970de5e9da55127
 r
 Bsrc/main/kotlin/com/splab/backend/homework/member/entity/Member.kt,7/1/717c689db5aaf696eab63c1515d7fdbb0de72a27
-p
-@src/main/kotlin/com/splab/backend/homework/member/entity/Rank.kt,d/e/de434a68a1bf142f8e86288311b8792f481ed80b
 €
 Psrc/main/kotlin/com/splab/backend/homework/member/service/CreateMemberUseCase.kt,7/5/7551cdbbeea80dff1512c910a8af4318c2e705b1
 €
@@ -27,3 +25,5 @@ q
 Asrc/main/kotlin/com/splab/backend/homework/member/entity/Level.kt,b/f/bfee2c4321772e67e89f60cd9ed564db8511eda9
 €
 Psrc/main/kotlin/com/splab/backend/homework/member/dto/response/MemberResponse.kt,7/f/7fd0e9ed5ff7963707592307a529fd885d4b8aa7
+r
+Bsrc/main/kotlin/com/splab/backend/homework/common/DataInitEvent.kt,0/a/0ad4f38afc6bdaadcf79e2a3c19bd428742c4dad

@@ -33,13 +33,13 @@
         </thead>
         <tbody>
             <tr th:each="member : ${memberList}">
-                <td th:text="${member.id}"></td>
+                <td th:text="${member.memberId}"></td>
                 <td th:text="${member.name}"></td>
                 <td th:text="${member.email}"></td>
                 <td th:text="${member.regDate}"></td>
                 <td th:text="${member.level}"></td>
                 <td th:text="${member.cardCount}"></td>
-                <td><a href="#" th:onclick="|javascript:deleteMember('${member.id}')|">[삭제]</a></td>
+                <td><a href="#" th:onclick="|javascript:deleteMember('${member.memberId}')|">[삭제]</a></td>
             </tr>
         </tbody>
 
