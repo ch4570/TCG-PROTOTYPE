@@ -27,3 +27,13 @@ Asrc/main/kotlin/com/splab/backend/homework/member/entity/Level.kt,b/f/bfee2c43
 Psrc/main/kotlin/com/splab/backend/homework/member/dto/response/MemberResponse.kt,7/f/7fd0e9ed5ff7963707592307a529fd885d4b8aa7
 r
 Bsrc/main/kotlin/com/splab/backend/homework/common/DataInitEvent.kt,0/a/0ad4f38afc6bdaadcf79e2a3c19bd428742c4dad
+†
+Vsrc/main/kotlin/com/splab/backend/homework/member/controller/RemoveMemberController.kt,0/d/0dd9e228ded38630e2420914c317a3f15c61c38a
+€
+Psrc/main/kotlin/com/splab/backend/homework/member/service/RemoveMemberUseCase.kt,5/6/5692792e73967923437aa6cd52bebb2666a45b55
+€
+Psrc/main/kotlin/com/splab/backend/homework/member/service/RemoveMemberService.kt,8/e/8e102c9ca48a441e5b1800092f860561531322dd
+u
+Esrc/main/kotlin/com/splab/backend/homework/common/dto/BaseResponse.kt,2/8/28ee197eff5a0705e4e7df54132338e864d961aa
+…
+Usrc/main/kotlin/com/splab/backend/homework/common/exception/GlobalExceptionHandler.kt,b/a/babdd7f76476848c438590c18152e0c157bd442d
