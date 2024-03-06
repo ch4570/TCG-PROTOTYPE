@@ -1,5 +1,6 @@
 package com.splab.backend.homework.member.entity
 
+import com.splab.backend.homework.common.entity.BaseTimeEntity
 import jakarta.persistence.*
 import java.time.LocalDate
 
@@ -10,11 +11,11 @@ class Member(
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     val memberId: Long? = null,
 
-    @Column(name = "MEMBER_NAME", columnDefinition = "VARCHAR(120)")
-    val name: String,
+    @Column(name = "MEMBER_NAME", columnDefinition = "VARCHAR(100)")
+    val memberName: String,
 
     @Column(name = "MEMBER_EMAIL", columnDefinition = "VARCHAR(50)")
-    val email: String,
+    val memberEmail: String,
 
     @Column(name = "MEMBER_CARD_COUNT", columnDefinition = "INT")
     val cardCount: Int,
@@ -28,4 +29,4 @@ class Member(
 
     @Column(name = "MEMBER_REG_DATE", columnDefinition = "TIMESTAMP")
     val regDate: LocalDate
-)
+) : BaseTimeEntity()

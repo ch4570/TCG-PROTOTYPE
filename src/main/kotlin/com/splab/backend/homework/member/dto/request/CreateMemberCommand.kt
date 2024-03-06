@@ -31,8 +31,8 @@ data class CreateMemberCommand(
 ) {
 
     fun mapToEntity() = Member(
-        name = name!!,
-        email = email!!,
+        memberName = name!!,
+        memberEmail = email!!,
         regDate = regDate!!,
         level = Level.BRONZE,
         cardCount = 0,

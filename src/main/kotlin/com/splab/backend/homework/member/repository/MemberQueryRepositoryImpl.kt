@@ -16,8 +16,8 @@ class MemberQueryRepositoryImpl(
             Projections.constructor(
                 MemberResponse::class.java,
                 member.memberId,
-                member.name,
-                member.email,
+                member.memberName,
+                member.memberEmail,
                 member.regDate,
                 member.level,
                 member.cardCount
@@ -30,5 +30,5 @@ class MemberQueryRepositoryImpl(
         if (level != null) member.level.eq(level) else null
 
     private fun nameEq(name: String?) =
-        if (!name.isNullOrBlank()) member.name.contains(name) else null
+        if (!name.isNullOrBlank()) member.memberName.contains(name) else null
 }

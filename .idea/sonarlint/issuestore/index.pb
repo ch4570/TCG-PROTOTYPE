@@ -49,3 +49,13 @@ Ysrc/main/kotlin/com/splab/backend/homework/member/repository/MemberQueryReposit
 Nsrc/main/kotlin/com/splab/backend/homework/member/service/LoadMemberUseCase.kt,0/1/01476c9f0ddeb6691a8f1c02dbee4a4c4593e795
 ~
 Nsrc/main/kotlin/com/splab/backend/homework/member/service/LoadMemberService.kt,0/c/0cde1463f40d00f7bfead8bb52ddbb36bd37dd21
+z
+Jsrc/main/kotlin/com/splab/backend/homework/common/entity/BaseTimeEntity.kt,f/8/f89c0d9c73c7c02885e751589c5efa4be55082e3
+}
+Msrc/main/kotlin/com/splab/backend/homework/common/config/JpaAuditingConfig.kt,8/a/8a2c82a4f3e8b51a2071ef12c66f8044d3423fbf
+p
+@src/main/kotlin/com/splab/backend/homework/member/entity/Game.kt,f/a/fadbe2a21be3f528a9a7eade9ab86882587d48c7
+~
+Nsrc/main/kotlin/com/splab/backend/homework/member/repository/GameRepository.kt,b/7/b7b8ca2362a8b2ccdfb34e5d5695223faca29b53
+w
+Gsrc/main/kotlin/com/splab/backend/homework/common/util/DataInitEvent.kt,c/6/c6c94a23cb483381265298051aab4353033719db

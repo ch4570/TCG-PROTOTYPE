@@ -23,8 +23,8 @@ class LoadMemberController(
             .map {
                 member -> MemberResponse(
                     memberId = member.memberId!!,
-                    name = member.name,
-                    email = member.email,
+                    name = member.memberName,
+                    email = member.memberEmail,
                     regDate = member.regDate,
                     level = member.level,
                     cardCount = member.cardCount
