@@ -59,3 +59,7 @@ p
 Nsrc/main/kotlin/com/splab/backend/homework/member/repository/GameRepository.kt,b/7/b7b8ca2362a8b2ccdfb34e5d5695223faca29b53
 w
 Gsrc/main/kotlin/com/splab/backend/homework/common/util/DataInitEvent.kt,c/6/c6c94a23cb483381265298051aab4353033719db
+†
+Vsrc/main/kotlin/com/splab/backend/homework/member/controller/ModifyMemberController.kt,8/2/82f5adfe24d855b0e2915d5b76da4193dfd4a982
+„
+Tsrc/main/kotlin/com/splab/backend/homework/member/dto/request/ModifyMemberCommand.kt,d/3/d32acdd15779cd5726de140b25ec1fd2d6888eea

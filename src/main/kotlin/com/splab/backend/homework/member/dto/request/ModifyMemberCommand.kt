@@ -1,7 +1,5 @@
 package com.splab.backend.homework.member.dto.request
 
-import com.splab.backend.homework.member.entity.Member
-import com.splab.backend.homework.member.entity.Level
 import com.splab.backend.homework.member.validation.DateRange
 import com.splab.backend.homework.member.validation.NotDuplicatedEmail
 import jakarta.validation.constraints.NotBlank
@@ -11,7 +9,9 @@ import org.hibernate.validator.constraints.Length
 import org.springframework.format.annotation.DateTimeFormat
 import java.time.LocalDate
 
-data class CreateMemberCommand(
+class ModifyMemberCommand(
+    @NotNull(message = "회원 아이디는 비어있을 수 없습니다.")
+    val memberId: Long,
 
     @field:NotBlank(message = "이름은 비어있을 수 없습니다.")
     @field:Length(min = 2, max = 100, message = "이름은 2자 이상 100자의 길이여야 합니다.")
@@ -28,14 +28,4 @@ data class CreateMemberCommand(
     @field:NotNull(message = "날짜는 비어있을 수 없습니다.")
     @field:DateTimeFormat(pattern = "yyyy-MM-dd")
     val regDate: LocalDate?
-) {
-
-    fun mapToEntity() = Member(
-        memberName = memberName!!,
-        memberEmail = memberEmail!!,
-        regDate = regDate!!,
-        level = Level.BRONZE,
-        cardCount = 0,
-        cardTotalPrice = 0.0
-    )
-}
+)

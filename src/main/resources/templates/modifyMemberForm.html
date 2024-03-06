@@ -2,14 +2,16 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>회원 가입 페이지</title>
+    <title>회원 정보 수정 페이지</title>
     <link th:href="@{/styles/memberForm.css}" rel="stylesheet"/>
 </head>
 <body>
     <div class="member_form-container">
-        <h1>회원 가입</h1>
+        <h1>회원 정보 수정</h1>
 
-        <form id="memberForm" th:action="@{/members/register}" th:object="${memberRegisterFormData}" method="POST">
+        <form id="memberForm" th:action="@{/members/modify}" th:object="${memberModifyFormData}" method="POST">
+            <input type="hidden" id="memberId" th:field="*{memberId}" disabled/>
+
             <label for="name">이름</label>
             <input type="text" id="name" th:field="*{memberName}"/>
             <p th:if="${#fields.hasErrors('memberName')}" th:errors="*{memberName}" class="error-message"></p>

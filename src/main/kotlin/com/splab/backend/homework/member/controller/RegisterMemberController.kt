@@ -19,13 +19,13 @@ class RegisterMemberController(
 
     @GetMapping("/registerForm")
     fun memberRegisterForm(model: Model) : String {
-        val memberFormData = CreateMemberCommand(name = null, email = null, regDate = null)
-        model.addAttribute("memberFormData", memberFormData)
+        val memberRegisterFormData = CreateMemberCommand(memberName = null, memberEmail = null, regDate = null)
+        model.addAttribute("memberRegisterFormData", memberRegisterFormData)
         return "registerMemberForm"
     }
 
-    @PostMapping("/submitForm")
-    fun submitMember(@Valid @ModelAttribute("memberFormData") memberFormData: CreateMemberCommand,
+    @PostMapping("/register")
+    fun submitMember(@Valid @ModelAttribute("memberRegisterFormData") memberFormData: CreateMemberCommand,
                      bindingResult: BindingResult) : String {
         if (bindingResult.hasErrors())
             return "registerMemberForm"
